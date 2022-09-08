@@ -1,5 +1,6 @@
 .bg-image {
     width: 100%;
+    height: 100vh;
     height: fit-content;
     background: url(../images/bg.jpg) no-repeat center center;
     border-radius: 0px !important;
@@ -8,7 +9,7 @@
 .mask {
     width: 100%;
     height: 100vh;
-    padding: 60px 0px;
+    padding: 50px 0px;
     height: fit-content;
     background-color: rgba(0, 0, 0, 0.3);
     text-align: center;
@@ -31,7 +32,7 @@
 .textAriea {
     width: 100%;
     height: auto;
-    margin: 30px auto;
+    margin: 30px auto 0px;
 }
 
 .timeBg {
@@ -53,15 +54,15 @@
 }
 
 .dateText p {
-    font-size: 32px;
-    font-weight: 800;
-    line-height: 34px;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 24px;
 }
 
 .dateText h1 {
-    font-size: 32px;
-    font-weight: 900;
-    line-height: 34px;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 28px;
 }
 
 .dateTime {
@@ -103,4 +104,39 @@
     font-weight: 600;
     color: #000;
     padding-left: 10px;
+}
+
+.logingBg {
+    display: inline-block;
+    background: #fe5804;
+    padding: 8px 25px;
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logingBg:hover {
+    background: #005ca9;
+    transition: 0.5s;
+    color: #fff;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+}
+
+/************************** login ***************************/
+.bg-image1 {
+    width: 100%;
+    height: 100vh;
+    height: fit-content;
+    background: url(../images/login.jpg) no-repeat center center;
+    border-radius: 0px !important;
+}
+.mask1 {
+    width: 100%;
+    height: 100vh;
+    padding: 50px 0px;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
 }

@@ -2574,7 +2574,14 @@ section {
   color: var(--color-secondary);
   background-color: var(--color-primary);
 }
-
+.form-select {
+   font-size: 16px !important;
+  line-height: 33px !important;
+  color: #55575a !important;
+ 
+  border-radius: 0px !important;
+  
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

@@ -5,12 +5,14 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Health Quad</title>
+  <title>UpConstruction Bootstrap Template - Contact</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
- 
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +29,12 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- =======================================================
+  * Template Name: UpConstruction - v1.1.0
+  * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
@@ -46,8 +54,8 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="index.html" >Home</a></li>
-          <li><a href="agenda.html"  >Agenda</a></li>
-          <li><a href="accommodation.html" class="active">Hotel Accommodation</a></li>
+          <li><a href="agenda.html" class="active" >Agenda</a></li>
+          <li><a href="accommodation.html" >Hotel Accommodation</a></li>
            <!-------------
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
            
@@ -81,108 +89,84 @@
     <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/breadcrumbs-bg.jpg');">
       <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
-        <h2>Accommodation</h2>
+        <h2>Contact</h2>
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li>Accommodation</li>
+          <li>Contact</li>
         </ol>
 
       </div>
     </div><!-- End Breadcrumbs -->
 
-    <!-- ======= Option 1 Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row position-relative">
-
-          <div class="col-lg-7 about-img" style="background-image: url(assets/img/about.jpg);"></div>
-
-          <div class="col-lg-7">
-            <h2>Option 1</h2>
-            <div class="our-story">
-              <h4>Hotel ITC</h4>
-             
-              <p>Inventore aliquam beatae at et id alias. Ipsa dolores amet consequuntur minima quia maxime autem. Quidem id sed ratione. Tenetur provident autem in reiciendis rerum at dolor. Aliquam consectetur laudantium temporibus dicta minus dolor.</p>
-              <ul>
-                <li><i class="bi bi-check-circle"></i> <span>View - Cityscape</span></li>
-                <li><i class="bi bi-check-circle"></i> <span>Bed Type - King Size Or Twin Bed</span></li>
-                <li><i class="bi bi-check-circle"></i> <span>Total Room Size - 37.16 Square Metres</span></li>
-              </ul>
-              <p>Single Occupancy INR 15,750 plus taxes</p>
-              <p>Double Occupancy INR 16,750 plus taxes</p>
-                
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <div class="info-item  d-flex flex-column justify-content-center align-items-center">
+              <i class="bi bi-map"></i>
+              <h3>Our Address</h3>
+              <p>A108 Adam Street, New York, NY 535022</p>
             </div>
-          </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center">
+              <i class="bi bi-envelope"></i>
+              <h3>Email Us</h3>
+              <p>contact@example.com</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item  d-flex flex-column justify-content-center align-items-center">
+              <i class="bi bi-telephone"></i>
+              <h3>Call Us</h3>
+              <p>+1 5589 55488 55</p>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+        <div class="row gy-4 mt-1">
+
+          <div class="col-lg-6 ">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+          </div><!-- End Google Maps -->
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row gy-4">
+                <div class="col-lg-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-lg-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div><!-- End Contact Form -->
 
         </div>
 
       </div>
-    </section>
-    <!-- End Option 1 Section -->
-<!-- ======= Option 2 Section ======= -->
-<section id="about" class="about">
-  <div class="container" data-aos="fade-up">
+    </section><!-- End Contact Section -->
 
-    <div class="row position-relative">
-
-      <div class="col-lg-7 about-img" style="background-image: url(assets/img/option2.jpg);"></div>
-
-      <div class="col-lg-7">
-        <h2>Option 2</h2>
-        <div class="our-story">
-          <h4>Hotel ITC</h4>
-         
-          <p>Exquisite view across the bay be enjoyed from the wall to wall windows windows in the bedroom. Furnished with a king size or twin beds, an armchair and a writing desk, these rooms an idea choice for bussiness or leisure raveller to mumbai </p>
-          <ul>
-            <li><i class="bi bi-check-circle"></i> <span>View - Cityscape</span></li>
-            <li><i class="bi bi-check-circle"></i> <span>Bed Type - King Size Or Twin Bed</span></li>
-            <li><i class="bi bi-check-circle"></i> <span>Total Room Size - 39.8 - 45.1 Square Metres</span></li>
-          </ul>
-          <p>Single occupancy  INR 19,250 plus Taxes</p>
-          <p>Double Occupancy INR 20,250 plus taxes</p>
-            
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-<!-- End Option 2 Section -->
-<!-- ======= Option 2 Section ======= -->
-<section id="about" class="about">
-  <div class="container" data-aos="fade-up">
-
-    <div class="row position-relative">
-
-      <div class="col-lg-7 about-img" style="background-image: url(assets/img/option3.jpg);"></div>
-
-      <div class="col-lg-7">
-        <h2>Option 3</h2>
-        <div class="our-story">
-          <h4>Hotel ITC</h4>
-         
-          <p>Especialy desing for you to relax for you to relax and unwind. hte shophisticated interion of these suites flow through a comfortable living room into a king size master bedroom and a spectacular bathroom. Wall to wall windows throught, frame magnificent ocean vies; these can even be enjoyed while relaxing in the bathtub. An experience made all the mokre special when complimented by our warm hospitality, 24 hour a day </p>
-          <ul>
-            <li><i class="bi bi-check-circle"></i> <span>View - Ocean</span></li>
-            <li><i class="bi bi-check-circle"></i> <span>Bed Type - King Size </span></li>
-            <li><i class="bi bi-check-circle"></i> <span>Total Room Size - 73 Square Metres</span></li>
-          </ul>
-          <p> INR 32,000 plus taxes</p>
-          
-            
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-<!-- End Option 2 Section -->
   </main><!-- End #main -->
 
- 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
 
@@ -192,10 +176,11 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
-              <h3>Health Quad</h3>
+              <h3>UpConstruction</h3>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br><br>
-                <strong>Phone:</strong> +191 0000000000<br>
+                A108 Adam Street <br>
+                NY 535022, USA<br><br>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
                 <strong>Email:</strong> info@example.com<br>
               </p>
               <div class="social-links d-flex mt-3">
@@ -221,33 +206,33 @@
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Terms of service</a></li>
-              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Product Management</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Graphic Design</a></li>
             </ul>
           </div><!-- End footer links column-->
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Hic solutasetp</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Terms of service</a></li>
-              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Molestiae accusamus iure</a></li>
+              <li><a href="#">Excepturi dignissimos</a></li>
+              <li><a href="#">Suscipit distinctio</a></li>
+              <li><a href="#">Dilecta</a></li>
+              <li><a href="#">Sit quas consectetur</a></li>
             </ul>
           </div><!-- End footer links column-->
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Nobis illum</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Terms of service</a></li>
-              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Ipsam</a></li>
+              <li><a href="#">Laudantium dolorum</a></li>
+              <li><a href="#">Dinera</a></li>
+              <li><a href="#">Trodelas</a></li>
+              <li><a href="#">Flexo</a></li>
             </ul>
           </div><!-- End footer links column-->
 
@@ -258,11 +243,14 @@
     <div class="footer-legal text-center position-relative">
       <div class="container">
         <div class="copyright">
-          &copy; Copyright <strong><span>Health Quad</span></strong>. All Rights Reserved
+          &copy; Copyright <strong><span>UpConstruction</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
-      
-          Designed by <a href="http://gipinfosystems.com/">Gip Infosystems Pvt. Ltd.</a>
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
       </div>
     </div>

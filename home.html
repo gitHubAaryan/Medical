@@ -10,11 +10,13 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
- 
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -48,7 +50,7 @@
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="agenda.html">Agenda</a></li>
           <li><a href="accommodation.html">Hotel Accommodation</a></li>
-           <!-------------
+          <!-------------
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
            
             <ul>
@@ -83,7 +85,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-6 text-center">
             <h2 data-aos="fade-down">Health <span>Quad</span></h2>
-            
+
             <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">Register Now</a>
           </div>
         </div>
@@ -95,7 +97,7 @@
       <div class="carousel-item active" style="background-image: url(images/img1.jpg)"></div>
       <div class="carousel-item" style="background-image: url(images/img2.jpg)"></div>
       <div class="carousel-item" style="background-image: url(images/img3.jpg)"></div>
-      
+
 
 
       <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
@@ -121,8 +123,8 @@
 
           <div class="col-lg-12" data-aos="fade">
             <form action="forms/quote.php" method="post" class="php-email-form">
-              <h3>Registration</h3>
-              <p>All fields are mandatory</p>
+              
+
               <div class="row gy-3">
                 <div class="col-md-6 ">
                   <input type="email" class="form-control" name="email" placeholder="Email" required>
@@ -149,52 +151,113 @@
                 </div>
 
                 <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="customCheck2">
-                  <label class="custom-control-label" for="customCheck2">Will there is anyone else traveling with you. Kindly fill their details 
+                  <input type="checkbox" name="c1" onclick="showMe('div1')" class="custom-control-input"
+                    id="customCheck2">
+                  <label class="custom-control-label" for="customCheck2">
+                    Will there is anyone else traveling with you. Kindly fill their details
+                  </label>
+                </div>
+                <hr>
+                <div class=" col-sm-2">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                    <label class="custom-control-label" for="customCheck2">
+                      Vege
                     </label>
+                  </div>
                 </div>
-                <div class="col-md-6 ">
-                  <input type="pan" class="form-control" name="pan" placeholder="PAN" required>
-                </div>
-                <div class="col-md-6 ">
-                  <select class="form-select" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-                <div class="col-md-4">
-                  <input type="text" name="name" class="form-control" placeholder="First Name " required>
-                </div>
-                <div class="col-md-4">
-                  <input type="text" name="name" class="form-control" placeholder="Middle Name " required>
-                </div>
-                <div class="col-md-4">
-                  <input type="text" name="name" class="form-control" placeholder="Last Name " required>
-                </div>
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="phone" placeholder="Phone" required>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your quote request has been sent successfully. Thank you!</div>
-
-                  <button type="submit">Submit</button>
+                <div class=" col-sm-2">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                    <label class="custom-control-label" for="customCheck2">
+                      Non-Vege
+                    </label>
+                  </div>
                 </div>
 
               </div>
-            </form>
-          </div><!-- End Quote Form -->
 
-        </div>
+              <hr>
+              <div id="div1" style="display:none; width: 100%;">
+                <div class="row">
+                  <div class="col-md-6 mt-2">
+                    <input type="pan" class="form-control" name="pan" placeholder="PAN" required>
+                  </div>
+                  <div class="col-md-6 mt-2">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Open this select menu</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4 mt-2">
+                    <input type="text" name="name" class="form-control" placeholder="First Name " required>
+                  </div>
+                  <div class="col-md-4 mt-2">
+                    <input type="text" name="name" class="form-control" placeholder="Middle Name " required>
+                  </div>
+                  <div class="col-md-4 mt-2">
+                    <input type="text" name="name" class="form-control" placeholder="Last Name " required>
+                  </div>
+                  <div class="col-md-12 mt-2">
+                    <input type="text" class="form-control" name="phone" placeholder="Phone" required>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class=" col-sm-12 mt-4">
+                <div class="row">
+                  <div class=" col-sm-3">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="chkBoxHelp" >
+                      <label class="custom-control-label">
+                        Option 1
+                      </label>
+                    </div>
+                    </div>
+                    <div class=" col-sm-3">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" >
+                        <label class="custom-control-label">
+                          Option 2
+                        </label>
+                      </div>
+                      </div>
+                      <div class=" col-sm-3">
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" >
+                          <label class="custom-control-label">
+                            Option 3
+                          </label>
+                        </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <a href="accommodation.html" class=" btn btn-outline-primary" target="_blank">View Rooms Details</a>
+                          
+                        </div>
+                  </div>
+                </div>
+<br><br>
+              <div class="col-md-12 text-center">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your quote request has been sent successfully. Thank you!</div>
+
+                <button type="submit">Submit</button>
+              </div>
+
+          </div>
+          </form>
+        </div><!-- End Quote Form -->
+
+      </div>
 
       </div>
     </section><!-- End Get Started Section -->
 
-    
+
     <!-- End Recent Blog Posts Section -->
 
   </main><!-- End #main -->
@@ -277,7 +340,7 @@
           &copy; Copyright <strong><span>Health Quad</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
-      
+
           Designed by <a href="http://gipinfosystems.com/">Gip Infosystems Pvt. Ltd.</a>
         </div>
       </div>
@@ -286,7 +349,8 @@
   </footer>
   <!-- End Footer -->
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
 
@@ -301,6 +365,22 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    function showMe(box) {
+
+      var chboxs = document.getElementsByName("c1");
+      var vis = "none";
+      for (var i = 0; i < chboxs.length; i++) {
+        if (chboxs[i].checked) {
+          vis = "block";
+          break;
+        }
+      }
+      document.getElementById(box).style.display = vis;
+
+
+    }
+  </script>
 
 </body>
 
